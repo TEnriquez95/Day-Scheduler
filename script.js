@@ -19,6 +19,51 @@ $.each(hourBlock,function (i, hour) {
 
 $('.saveBtn').on("click", function (event) {
     var todoItem = 
-    event.target.parentElement.previousElementSibling.children[0].value;
+    event.document.getElemenById.value;
     localStorage.setItem("to-do", JSON.stringify(data));
+});
+
+
+$(document).ready(function() {
+    if (localStorage["9am"] !== null && localStorage["9am"] !== undefined) {
+        var nineAm = $("<p>" + localStorage["9am"] + "</p>");
+        $("#nineAm").append(nineAm[0].innerText);
+    } else {
+        ("");
+    }
+    $(document).ready(function() {
+    if (localStorage["10am"] !== null && localStorage["10am"] !== undefined) {
+        var tenAm = $("<p>" + localStorage["10am"] + "</p>");
+        $("#tenAm").append(tenAm[0].innerText);
+    } else {
+        ("");
+    }
+    $(document).ready(function() {
+        if (localStorage["11am"] !== null && localStorage["11am"] !== undefined) {
+            var elevenAm = $("<p>" + localStorage["11am"] + "</p>");
+            $("#elevenAm").append(elevenAm[0].innerText);
+        } else {
+            ("");
+        }
+        $(document).ready(function() {
+    if (localStorage["10am"] !== null && localStorage["10am"] !== undefined) {
+        var tenAm = $("<p>" + localStorage["10am"] + "</p>");
+        $("#tenAm").append(tenAm[0].innerText);
+    } else {
+        ("");
+    }
+    $(document).ready(function() {
+        if (localStorage["10am"] !== null && localStorage["10am"] !== undefined) {
+            var tenAm = $("<p>" + localStorage["10am"] + "</p>");
+            $("#tenAm").append(tenAm[0].innerText);
+        } else {
+            ("");
+        }
+        $(document).ready(function() {
+            if (localStorage["10am"] !== null && localStorage["10am"] !== undefined) {
+                var tenAm = $("<p>" + localStorage["10am"] + "</p>");
+                $("#tenAm").append(tenAm[0].innerText);
+            } else {
+                ("");
+            }    
 });
